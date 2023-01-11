@@ -18,12 +18,12 @@ const Nav = () => {
       <div className="wrapper">
         <div className="logo main">
           <Link to="/">
-            <img width={12} height={12} src={Logo} alt="Logo" />
+            <img width={20} height={20} src={Logo} alt="Logo" />
             <p>Renty</p>
           </Link>
         </div>
 
-        <div className={open ? "container" : "container active"}>
+        <div className={!open ? "container" : "container active"}>
           <div className="link">
             <NavLink to="buying" onClick={closeNav}>
               Buying
@@ -38,7 +38,7 @@ const Nav = () => {
 
           <div className="logo">
             <Link to="/">
-              <img width={12} height={12} src={Logo} alt="Logo" />
+              <img width={15} height={15} src={Logo} alt="Logo" />
               <p>Renty</p>
             </Link>
           </div>
@@ -56,7 +56,7 @@ const Nav = () => {
           </div>
         </div>
 
-        {open ? navOpen : navClose}
+        {open ? navClose : navOpen}
       </div>
     </div>
   );
