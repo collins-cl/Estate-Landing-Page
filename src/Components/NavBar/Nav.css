@@ -156,7 +156,7 @@
     justify-content: space-evenly;
     align-items: flex-start;
     flex-direction: column;
-    background-color: #969696;
+    background-color: #808080;
     border: none;
   }
 
@@ -169,7 +169,7 @@
     align-items: flex-start;
   }
 
-  .container.active .link2{
+  .container.active .link2 {
     margin-top: -70%;
   }
 
@@ -180,8 +180,8 @@
   .container.active .link a,
   .container.active .link2 a {
     font-size: 25px;
-    font-weight: 200;
-    color: rgb(221, 221, 221);
+    font-weight: bold;
+    color: black !important;
     position: relative;
   }
 
