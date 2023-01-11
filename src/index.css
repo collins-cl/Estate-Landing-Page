@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: #1f2022;
+  color: white;
+  font-family: "Opensans";
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: normal;
+  src: local("OpenSans"),
+    url("../src/Fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 600;
+  src: local("OpenSans"),
+    url("../src/Fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf");
+}
