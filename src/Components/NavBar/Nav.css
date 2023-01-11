@@ -153,7 +153,7 @@
     width: 70%;
     height: 100vh;
     display: flex;
-    justify-content: space-evenly;
+   justify-content: space-evenly;
     align-items: flex-start;
     flex-direction: column;
     background-color: #808080;
@@ -163,10 +163,10 @@
   .container.active .link,
   .container.active .link2 {
     display: flex;
-    height: 30%;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 3em;
   }
 
   .container.active .link2 {
