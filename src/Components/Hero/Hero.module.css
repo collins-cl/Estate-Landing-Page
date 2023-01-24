@@ -126,7 +126,7 @@
 }
 
 .mobile_rating {
-  /* display: none; */
+  display: none;
 }
 
 @media screen and (max-width: 600px) {

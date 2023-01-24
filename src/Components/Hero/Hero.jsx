@@ -74,13 +74,6 @@ const Hero = () => {
       <div className={css.mobile_rating}>
         <Ratings />
       </div>
-      <p>gg</p>
-      <p>gg</p>
-      <p>gg</p>
-      <p>gg</p>
-      <p>gg</p>
-      <p>gg</p>
-      <p>gg</p>
     </div>
   );
 };
