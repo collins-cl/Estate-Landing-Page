@@ -1,0 +1,125 @@
+.hero {
+  position: relative;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 4em;
+}
+
+.blurry_background {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(120, 120, 120, 0.4);
+  filter: blur(212px);
+  position: absolute;
+  top: -8em;
+  left: -5em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container_one .wrapper {
+  position: relative;
+  outline: 10px solid #2d2d2f;
+
+  width: 400px;
+  height: 550px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.container_one .wrapper .options {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 2em;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  overflow-x: scroll;
+  padding: 5px 2em;
+}
+
+.container_one .wrapper .options img {
+  cursor: pointer;
+}
+
+.container_one .wrapper .options::-webkit-scrollbar {
+  display: none;
+}
+
+.container_two {
+  max-width: 500px;
+}
+
+.container_two h2 {
+  font-size: 3.5em;
+  font-weight: 900;
+  text-transform: capitalize;
+  line-height: 1.2;
+  font-family: "Sora";
+}
+
+.container_two p {
+  margin-top: 1.5em;
+  color: #969696;
+  font-size: 14px;
+}
+
+.container_two .search_params {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 3em;
+}
+
+.search_params .box1 {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 5px;
+}
+
+.icon_outline {
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid rgba(151, 151, 151, 0.845);
+}
+
+.search_params .box1 .icon {
+  font-size: 18px;
+}
+
+.search_params .box1 .categories {
+  margin-top: -15px;
+}
+.search_params .box1 .categories p:nth-child(1) {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search_params .box1 .selected {
+  margin-top: 5px;
+  color: black;
+  font-weight: medium;
+}
+
+.search {
+  padding: 7px 20px;
+  background: #1fab71;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
