@@ -5,6 +5,7 @@ import Option1 from "../../assets/option1.png";
 import { HiHome } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";
 import { CgChevronDown } from "react-icons/cg";
+import Ratings from "../Ratings/Ratings";
 
 const Hero = () => {
   return (
@@ -63,7 +64,15 @@ const Hero = () => {
 
             <div className={css.search}>Search</div>
           </div>
+
+          <div className={css.desktop_rating}>
+            <Ratings />
+          </div>
         </div>
+      </div>
+
+      <div className={css.mobile_rating}>
+        <Ratings />
       </div>
     </div>
   );

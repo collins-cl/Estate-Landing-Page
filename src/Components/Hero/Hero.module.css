@@ -14,6 +14,7 @@
   position: absolute;
   top: -8em;
   left: -5em;
+  z-index: -999;
 }
 
 .container {
@@ -122,4 +123,133 @@
   border-radius: 5px;
   font-size: 13px;
   cursor: pointer;
+}
+
+.mobile_rating {
+  /* display: none; */
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 4em;
+  }
+
+  .blurry_background {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(120, 120, 120, 0.4);
+    filter: blur(212px);
+    position: absolute;
+    top: -4em;
+    left: -3em;
+    z-index: -999;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3em;
+  }
+
+  .container_one .wrapper {
+    position: relative;
+    outline: 8px solid #2d2d2f;
+    width: 90vw;
+    height: 500px;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .container_one .wrapper .options {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 2em;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    overflow-x: scroll;
+    padding: 5px 2em;
+  }
+
+  .container_one .wrapper .options img {
+    cursor: pointer;
+  }
+
+  .container_one .wrapper .options::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container_two {
+    max-width: 90vw;
+  }
+
+  .container_two h2 {
+    font-size: 2.6em;
+    font-weight: 700;
+  }
+
+  .container_two p {
+    margin-top: 1em;
+    color: #969696;
+    font-size: 17px;
+  }
+
+  .container_two .search_params {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8em;
+    padding: 1.1em 20px;
+  }
+
+  .search_params .box1 {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+    padding: 10px;
+  }
+
+  .icon_outline {
+    border-radius: 50%;
+    padding: 8px;
+  }
+
+  .search_params .box1 .icon {
+    font-size: 25px;
+  }
+
+  .search_params .box1 .categories {
+    margin-top: -15px;
+  }
+
+  .search_params .box1 .selected {
+    margin-top: 5px;
+    color: rgb(37, 37, 37);
+    font-weight: medium;
+    font-size: 18px;
+  }
+
+  .search {
+    text-align: center;
+    padding: 12px 0;
+    width: 100%;
+    background: #1fab71;
+    border-radius: 10px;
+    font-size: 19px;
+    cursor: pointer;
+  }
+
+  .desktop_rating {
+    display: none;
+  }
+
+  .mobile_rating {
+    display: block;
+  }
 }
