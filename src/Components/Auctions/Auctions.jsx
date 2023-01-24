@@ -5,7 +5,7 @@ import { SiSquare } from "react-icons/si";
 import { Link } from "react-router-dom";
 import "../Auctions/Auctions.css";
 import Build from "../../assets/build2.jpg";
-import BG from "../../assets/intersect.png";
+// import BG from "../../assets/intersect.png";
 
 const Auctions = () => {
   return (
@@ -124,7 +124,7 @@ const Auctions = () => {
       </div>
 
       <div className="subtle-wallpaper">
-        <img src={BG} alt="" />
+        {/* <img src={BG} alt="" /> */}
       </div>
     </div>
   );
