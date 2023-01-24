@@ -116,7 +116,7 @@ const Auctions = () => {
                   Book Now
                 </Link>
 
-                <div className="price">$5,200,200</div>
+                <div className="price">$5,100,200</div>
               </div>
             </div>
           </div>
