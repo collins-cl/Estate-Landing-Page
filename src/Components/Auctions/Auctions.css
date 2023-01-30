@@ -223,26 +223,10 @@
     height: 100vh;
   } */
 
-  .box .book {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px 0 0;
-  }
-
   .box .book a {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px 0;
     text-align: center;
     width: 60%;
-    background-color: transparent;
-    border: 1px solid #1fab71;
-    outline: none;
-    border-radius: 5px;
-    transition: 0.2s;
-  }
-
-  .box .book a:hover {
-    background-color: #1fab71;
   }
 }
