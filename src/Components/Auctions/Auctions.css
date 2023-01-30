@@ -145,7 +145,7 @@
   height: 200px;
 }
 
-.explore-2-more{
+.explore-2-more {
   display: none;
 }
 
@@ -238,7 +238,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 4em;
   }
 
   .explore-2-more .more {
