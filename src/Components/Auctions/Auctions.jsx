@@ -25,7 +25,7 @@ const Auctions = () => {
 
         <div className="auction-boxes">
           {data &&
-            data.splice(0, 3).map((item) => (
+            data.slice(0, 3).map((item) => (
               <div className="box">
                 <div className="img">
                   <img src={item.image} alt="" />
