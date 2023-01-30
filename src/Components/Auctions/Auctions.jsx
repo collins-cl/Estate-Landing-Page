@@ -1,12 +1,12 @@
 import React from "react";
-import { FaArrowRight, FaRegSquare } from "react-icons/fa";
+import {  FaRegSquare } from "react-icons/fa";
 import { MdLocationOn, MdBed } from "react-icons/md";
 import { SiSquare } from "react-icons/si";
 import { Link } from "react-router-dom";
 import "../Auctions/Auctions.css";
-import Build from "../../assets/build2.jpg";
 import DummyData from "../Dummies/Dummyhomes";
 // import BG from "../../assets/intersect.png";
+import Right from "../../assets/arrow-right.png";
 
 const Auctions = () => {
   const data = DummyData;
@@ -19,7 +19,7 @@ const Auctions = () => {
           <p>Our Popular Residence</p>
 
           <Link to="" className="more">
-            Explore More <FaArrowRight />
+            Explore More <img src={Right} alt="" />
           </Link>
         </div>
 
@@ -63,6 +63,12 @@ const Auctions = () => {
               </div>
             ))}
         </div>
+      </div>
+
+      <div className="explore-2-more">
+        <Link to="" className="more">
+          Explore More <img src={Right} alt="" />
+        </Link>
       </div>
 
       <div className="subtle-wallpaper">{/* <img src={BG} alt="" /> */}</div>

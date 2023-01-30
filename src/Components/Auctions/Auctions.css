@@ -28,7 +28,7 @@
 .auctions .heading a {
   font-weight: 100;
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,6 +145,10 @@
   height: 200px;
 }
 
+.explore-2-more{
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   .auctions {
     margin-top: 5em;
@@ -213,7 +217,7 @@
     z-index: -2;
     position: absolute;
     bottom: 0;
-    margin-bottom: -3em;
+    margin-bottom: -1em;
     background-color: #1a1c1c;
     height: 100vh;
   }
@@ -224,9 +228,24 @@
   } */
 
   .box .book a {
-    font-size: 14px;
+    font-size: 13px;
     padding: 10px 0;
     text-align: center;
     width: 60%;
+  }
+
+  .explore-2-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+  }
+
+  .explore-2-more .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
   }
 }
