@@ -115,10 +115,15 @@
 .box .book a {
   font-size: 12px;
   padding: 8px 20px;
-  background-color: #1fab71;
-  border: none;
+  background-color: transparent;
+  border: 1px solid #1fab71;
   outline: none;
   border-radius: 5px;
+  transition: .2s;
+}
+
+.box .book a:hover{
+    background-color: #1fab71;
 }
 
 .box .book .price {
@@ -130,7 +135,7 @@
   position: absolute;
   bottom: 0;
   margin-bottom: -7em;
-  background-color: #1c1d1d;
+  background-color: #2b2c2c;
   width: 100vw;
   height: 200px;
 }
@@ -209,12 +214,12 @@
     position: absolute;
     bottom: 0;
     margin-bottom: -3em;
-    background-color: #181a1a;
+    background-color: #1a1c1c;
     height: 100vh;
   }
 
   .subtle-wallpaper img {
     width: 100vw;
-    height: 100vh;
+    height: 10z0vh;
   }
 }

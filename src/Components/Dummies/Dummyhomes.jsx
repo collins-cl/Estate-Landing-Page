@@ -16,7 +16,7 @@ const DummyHomes = [
   {
     id: 2,
     location: {
-      city: "Jakarta",
+      city: "Mauwi",
       state: "Indonesia",
     },
     bed: 4,
@@ -96,7 +96,7 @@ const DummyHomes = [
   {
     id: 8,
     location: {
-      city: "Jakarta",
+      city: "NewYork",
       state: "USA",
     },
     bed: 5,
