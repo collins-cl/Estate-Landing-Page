@@ -1,0 +1,230 @@
+.benefits {
+  background: #1f2022;
+  padding: 5em 0;
+  margin-top: 4em;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.details {
+  max-width: 370px;
+}
+
+.heading {
+  color: #1fab71;
+  font-size: 15px;
+}
+
+.details h2 {
+  font-weight: 600;
+  font-size: 2.2em;
+  margin-top: 10px;
+}
+
+.description {
+  color: #969696;
+  font-size: 12px;
+  word-spacing: 2px;
+  margin-top: 10px;
+}
+
+.utils {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.utils p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.utils p img {
+  width: 15px;
+}
+
+.billboard {
+  height: 450px;
+  width: 400px;
+  overflow: hidden;
+  border-top-left-radius: 45%;
+  outline: 15px solid #808080;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 280px;
+  bottom: 0;
+  margin-bottom: 1em;
+  right: 0;
+  margin-right: 3.5em;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.employees div {
+  letter-spacing: 1px;
+}
+
+.employees p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.employees p span {
+  font-size: 10px;
+  margin-left: -5px;
+  color: #e9e5e5;
+}
+
+.employees p img {
+  width: 12px;
+}
+
+.stacks img {
+  outline: 2px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.stacks img:nth-child(2) {
+  margin-left: -15px;
+  background-color: black;
+}
+
+.stacks img:nth-child(3) {
+  margin-left: -15px;
+  background-color: blue;
+}
+
+.stacks img:nth-child(4) {
+  margin-left: -15px;
+  background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .benefits {
+    background: #1f2022;
+    padding: 3em 0;
+    margin-top: 2em;
+  }
+
+  .wrapper {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+  }
+
+  .details {
+    max-width: 100%;
+  }
+
+  .heading {
+    color: #1fab71;
+    font-size: 19px;
+  }
+
+  .description {
+    color: #969696;
+    font-size: 16px;
+  }
+
+  .utils {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+  }
+
+  .utils p {
+    font-size: 15px;
+  }
+
+  .utils p img {
+    width: 17px;
+  }
+
+  .billboard {
+    height: 350px;
+    width: 95%;
+    overflow: hidden;
+    border-top-left-radius: 45%;
+    outline: 15px solid #808080;
+    position: relative;
+  }
+
+  .container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 80%;
+    bottom: 0;
+    margin-bottom: 1em;
+    right: 0;
+    margin-right: 2em;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+  }
+
+  .employees div {
+    letter-spacing: 1px;
+  }
+
+  .employees p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .employees p span {
+    font-size: 10px;
+    margin-left: -5px;
+    color: #e9e5e5;
+  }
+
+  .employees p img {
+    width: 12px;
+  }
+
+  .stacks img {
+    outline: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+  .stacks img:nth-child(2) {
+    margin-left: -15px;
+    background-color: black;
+  }
+
+  .stacks img:nth-child(3) {
+    margin-left: -15px;
+    background-color: blue;
+  }
+
+  .stacks img:nth-child(4) {
+    margin-left: -15px;
+    background-color: red;
+  }
+}

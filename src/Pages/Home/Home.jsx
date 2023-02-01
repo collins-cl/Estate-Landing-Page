@@ -3,6 +3,7 @@ import Auctions from "../../Components/Auctions/Auctions";
 import Benefits from "../../Components/Benefits/Benefits";
 import Hero from "../../Components/Hero/Hero";
 import Services from "../../Components/Services/Services";
+import css from "../Home/Home.module.css";
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       <Hero />
       <Auctions />
       <Services />
-      <Benefits/>
+      <Benefits />
       <p>sjncjscsjcsks</p>
       <p>sjncjscsjcsks</p>
       <p>sjncjscsjcsks</p>
