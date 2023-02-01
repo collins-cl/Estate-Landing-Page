@@ -57,7 +57,7 @@
   width: 400px;
   overflow: hidden;
   border-top-left-radius: 45%;
-  outline: 15px solid #808080;
+  outline: 15px solid #373636;
   position: relative;
 }
 
@@ -165,10 +165,6 @@
   .billboard {
     height: 400px;
     width: 95%;
-    overflow: hidden;
-    border-top-left-radius: 45%;
-    outline: 15px solid #373636;
-    position: relative;
   }
 
   .container {
