@@ -163,11 +163,11 @@
   }
 
   .billboard {
-    height: 350px;
+    height: 400px;
     width: 95%;
     overflow: hidden;
     border-top-left-radius: 45%;
-    outline: 15px solid #808080;
+    outline: 15px solid #373636;
     position: relative;
   }
 
@@ -184,47 +184,5 @@
     margin-right: 2em;
     backdrop-filter: blur(10px);
     border-radius: 10px;
-  }
-
-  .employees div {
-    letter-spacing: 1px;
-  }
-
-  .employees p {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-  }
-
-  .employees p span {
-    font-size: 10px;
-    margin-left: -5px;
-    color: #e9e5e5;
-  }
-
-  .employees p img {
-    width: 12px;
-  }
-
-  .stacks img {
-    outline: 2px solid white;
-    padding: 5px;
-    border-radius: 50%;
-  }
-
-  .stacks img:nth-child(2) {
-    margin-left: -15px;
-    background-color: black;
-  }
-
-  .stacks img:nth-child(3) {
-    margin-left: -15px;
-    background-color: blue;
-  }
-
-  .stacks img:nth-child(4) {
-    margin-left: -15px;
-    background-color: red;
   }
 }
