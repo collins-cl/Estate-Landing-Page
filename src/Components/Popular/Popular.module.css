@@ -1,0 +1,59 @@
+.popular {
+  margin-top: 7em;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: auto;
+}
+
+.heading {
+  color: #1fab71;
+  font-size: 15px;
+}
+
+.popular_divide {
+  margin-top: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  max-width: 45%;
+  font-size: 2.2em;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.icons > * {
+  padding: 5px;
+  outline: 1px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.icon_2 {
+  background-color: white;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.slides {
+  margin-top: 3em;
+  margin-left: 10%;
+}
+
+.container {
+  position: relative;
+  width: 250px;
+  overflow: hidden;
+  transition: height .3s;
+  border-radius: 10px;
+}
+
