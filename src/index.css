@@ -37,6 +37,13 @@ body::-webkit-scrollbar{
 
 @font-face {
   font-family: "OpenSans";
+  font-weight: 100;
+  src: local("OpenSans"),
+    url("../src/Fonts/Open_Sans/static/OpenSans/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans";
   font-weight: 900;
   src: local("OpenSans"),
     url("../src/Fonts/Open_Sans/static/OpenSans/OpenSans-ExtraBold.ttf");

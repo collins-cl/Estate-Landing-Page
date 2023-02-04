@@ -2,6 +2,7 @@ import React from "react";
 import Accordions from "../../Components/Accordion/Accordions";
 import Auctions from "../../Components/Auctions/Auctions";
 import Benefits from "../../Components/Benefits/Benefits";
+import Footer from "../../Components/Footer/Footer";
 import Hero from "../../Components/Hero/Hero";
 import Popular from "../../Components/Popular/Popular";
 import Services from "../../Components/Services/Services";
@@ -15,7 +16,8 @@ const Home = () => {
       <Services />
       <Benefits />
       {/* <Popular /> */}
-      <Accordions/>
+      <Accordions />
+      <Footer />
       <p>sjncjscsjcsks</p>
       <p>sjncjscsjcsks</p>
       <p>sjncjscsjcsks</p>
