@@ -65,7 +65,11 @@ const Footer = () => {
       <div className={css.hr}></div>
 
       <div className={css.rights}>
-        
+        <div>©uihut.com 2022. All Rights Reserved.</div>
+        <div className={css.terms}>
+          <a href="/">Terms of Use</a>
+          <a href="/">Terms & Privacy</a>
+        </div>
       </div>
     </div>
   );

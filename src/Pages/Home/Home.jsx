@@ -18,28 +18,6 @@ const Home = () => {
       {/* <Popular /> */}
       <Accordions />
       <Footer />
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
-      <p>sjncjscsjcsks</p>
     </div>
   );
 };

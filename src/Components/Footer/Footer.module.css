@@ -43,6 +43,7 @@
 .links a {
   font-weight: 100;
   font-size: 13px;
+  color: #969696;
 }
 
 .f_box2 {
@@ -122,9 +123,111 @@ button {
   margin-top: 3em;
 }
 
-.hr{
+.hr {
+  margin-top: 2em;
+  color: #969696;
+  background-color: #969696;
+  height: 1px;
+}
+
+.rights {
+  margin-top: 2em;
+  color: #969696;
+  font-weight: 100;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+.terms a {
+  color: #969696;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    max-width: 90%;
+  }
+
+  .foot_boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .f_box1 {
+    width: 100%;
+  }
+
+  .head {
+    font-size: 20px;
+  }
+
+  .links a {
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+  .f_box2 {
+    max-width: 100%;
+  }
+
+  .newsletter {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .f_box2 form {
     margin-top: 2em;
-    color: #969696;
-    background-color: #969696;
-    height: 1px;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px 7px;
+  }
+
+  .socials {
+    width: 50%;
+    margin-top: 2em;
+  }
+
+  .info {
+    font-size: 15px;
+    width: 100%;
+    margin-top: 3em;
+  }
+
+  .rights {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .terms {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+  }
+
+  .terms a {
+    font-size: 15px;
+  }
 }
