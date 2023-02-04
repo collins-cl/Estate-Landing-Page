@@ -180,7 +180,7 @@ button {
   }
 
   .newsletter {
-    font-size: 16px;
+    font-size: 15px;
     width: 100%;
   }
 
@@ -207,13 +207,13 @@ button {
   }
 
   .info {
-    font-size: 16px;
+    font-size: 15px;
     width: 100%;
     margin-top: 3em;
   }
 
   .rights {
-    font-size: 16px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -228,6 +228,6 @@ button {
   }
 
   .terms a {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
