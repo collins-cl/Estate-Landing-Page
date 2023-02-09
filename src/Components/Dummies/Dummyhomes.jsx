@@ -2,6 +2,7 @@ const DummyHomes = [
   {
     id: 1,
     location: {
+      id: 1,
       city: "Jakarta",
       state: "USA",
     },
@@ -16,6 +17,7 @@ const DummyHomes = [
   {
     id: 2,
     location: {
+      id: 2,
       city: "Mauwi",
       state: "Indonesia",
     },
@@ -29,6 +31,7 @@ const DummyHomes = [
   {
     id: 3,
     location: {
+      id: 3,
       city: "Atlanta",
       state: "USA",
     },

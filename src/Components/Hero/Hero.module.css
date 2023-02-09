@@ -65,7 +65,7 @@
   font-family: "Sora";
 }
 
-.container_two p {
+.container_two .details {
   margin-top: 1.5em;
   color: #969696;
   font-size: 14px;
@@ -102,8 +102,37 @@
 }
 
 .search_params .box1 .categories {
-  margin-top: -15px;
+  max-width: 120px;
+  position: relative;
 }
+
+.search_params .box1 .categories p input {
+  color: black;
+  border: none;
+  padding: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  /* background-color: #1fab71; */
+  /* background-color: green; */
+}
+
+.search_params .box1 .categories p input::placeholder {
+  color: #2d2d2f;
+  font-size: 14px;
+}
+
+.loc_data {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  color: red;
+  height: 100px;
+  width: 500px;
+  z-index: 90;
+}
+
 .search_params .box1 .categories p:nth-child(1) {
   cursor: pointer;
   display: flex;
@@ -211,7 +240,7 @@
   .search_params .box1 {
     display: flex;
     align-items: center;
-    gap: .8em;
+    gap: 0.8em;
     padding: 10px;
   }
 
