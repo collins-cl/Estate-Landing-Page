@@ -84,7 +84,7 @@
 .search_params .box1 {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 1.5em;
   padding: 5px;
 }
 
@@ -106,44 +106,45 @@
   position: relative;
 }
 
-.search_params .box1 .categories p input {
-  color: black;
-  border: none;
-  padding: 8px;
-  font-size: 15px;
-  cursor: pointer;
-  width: 100%;
-  border-radius: 5px;
-  /* background-color: #1fab71; */
-  /* background-color: green; */
-}
-
-.search_params .box1 .categories p input::placeholder {
-  color: #2d2d2f;
-  font-size: 14px;
-}
-
-.loc_data {
-  position: fixed;
-  top: 0;
-  background-color: white;
-  color: red;
-  height: 100px;
-  width: 500px;
-  z-index: 90;
-}
-
-.search_params .box1 .categories p:nth-child(1) {
-  cursor: pointer;
+.categories p {
+  color: #2f2f30;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.data_loc {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: -1em;
+  margin-top: 3.5em;
+  background-color: white;
+  color: black;
+  width: 120px;
+  height: 50vh;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.data_items {
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .search_params .box1 .selected {
   margin-top: 5px;
   color: black;
   font-weight: medium;
+  text-transform: uppercase;
+  
 }
 
 .search {

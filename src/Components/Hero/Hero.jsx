@@ -9,30 +9,13 @@ import Ratings from "../Ratings/Ratings";
 import DummyHomes from "../Dummies/Dummyhomes";
 
 const Hero = () => {
-  const [location, setLocation] = useState("");
+  const [show, setShow] = useState(false);
+  const [location, setLocation] = useState("None");
   const [state, setState] = useState("");
 
   const DummyData = DummyHomes;
 
-  const filteredLocation = DummyData.filter((el) => {
-    if (location === "") {
-      return;
-    } else {
-      return el.location.city.toLowerCase().includes(location);
-    }
-  });
-
-  const filteredState = DummyData.filter((el) => {
-    if (state === "") {
-      return;
-    } else {
-      return el.location.state.toLowerCase().includes(state);
-    }
-  });
-
-  useEffect(() => {
-    filteredLocation;
-  }, [location, DummyData]);
+  const toggleShow = () => setShow(!show);
 
   return (
     <div className={css.hero}>
@@ -65,26 +48,27 @@ const Hero = () => {
                 <MdLocationOn color="#1FAB71" className={css.icon} />
               </div>
 
-              <div className={css.categories}>
+              <div onClick={toggleShow} className={css.categories}>
                 <p>
-                  <input
-                    type="search"
-                    placeholder="Location"
-                    value={location}
-                    onChange={(e) => setLocation(e.target.value)}
-                  />
+                  Location <CgChevronDown />
                 </p>
 
-                <div>
-                  {filteredLocation &&
-                    filteredLocation.map((data) => (
-                      <div className={css.loc_data} key={data.id}>
+                <p onClick={toggleShow} className={css.selected}>
+                  {location}
+                </p>
+
+                {show ? (
+                  <div className={css.data_loc}>
+                    {DummyData.map((data) => (
+                      <div
+                        onClick={() => setLocation(data.location.city)}
+                        className={css.data_items}
+                      >
                         {data.location.city}
                       </div>
                     ))}
-                </div>
-
-                {/* <p className={css.selected}>Yogyakarta</p> */}
+                  </div>
+                ) : null}
               </div>
             </div>
 
@@ -95,10 +79,12 @@ const Hero = () => {
 
               <div className={css.categories}>
                 <p>
-                  <input type="search" name="" placeholder="State" />
+                  Type <CgChevronDown />
                 </p>
 
-                {/* <p className={css.selected}>Industrial Home</p> */}
+                <p onClick={toggleShow} className={css.selected}>
+                  {location}
+                </p>
               </div>
             </div>
 
