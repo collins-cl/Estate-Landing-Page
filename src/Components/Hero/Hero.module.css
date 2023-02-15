@@ -71,21 +71,22 @@
   font-size: 14px;
 }
 
-.container_two .search_params {
+.container_two .search_params form {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 20px;
+  padding: 5px 10px;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 12px;
   margin-top: 3em;
 }
 
-.search_params .box1 {
+.search_params form .box1 {
   display: flex;
   align-items: center;
-  gap: 1.5em;
+  gap: 1em;
   padding: 5px;
+  width: 40%;
 }
 
 .icon_outline {
@@ -97,11 +98,11 @@
   outline: 1px solid rgba(151, 151, 151, 0.845);
 }
 
-.search_params .box1 .icon {
+.search_params form .box1 .icon {
   font-size: 18px;
 }
 
-.search_params .box1 .categories {
+.search_params form .box1 .categories {
   max-width: 120px;
   position: relative;
 }
@@ -123,9 +124,9 @@
   margin-top: 3.5em;
   background-color: white;
   color: black;
-  width: 120px;
+  width: 130px;
   height: 50vh;
-  padding: 10px 15px;
+  padding: 10px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -134,17 +135,25 @@
 }
 
 .data_items {
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.search_params .box1 .selected {
+.data_items_2 {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.search_params form .box1 .selected {
   margin-top: 5px;
   color: black;
-  font-weight: medium;
+  font-weight: 600;
   text-transform: uppercase;
-  
+  font-size: 12px;
 }
 
 .search {
@@ -153,6 +162,9 @@
   border-radius: 5px;
   font-size: 13px;
   cursor: pointer;
+  width: 25%;
+  text-align: center;
+  margin-left: 10px;
 }
 
 .mobile_rating {
@@ -230,7 +242,7 @@
     font-size: 17px;
   }
 
-  .container_two .search_params {
+  .container_two .search_params form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -238,11 +250,12 @@
     padding: 1em 20px;
   }
 
-  .search_params .box1 {
+  .search_params form .box1 {
     display: flex;
     align-items: center;
-    gap: 0.8em;
+    gap: 1em;
     padding: 10px;
+    width: 100%;
   }
 
   .icon_outline {
@@ -256,13 +269,46 @@
 
   .search_params .box1 .categories {
     margin-top: -15px;
+    width: 100%;
   }
 
   .search_params .box1 .selected {
     margin-top: 5px;
     color: rgb(37, 37, 37);
     font-weight: medium;
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .data_loc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: -3.5em;
+    margin-top: 4.2em;
+    color: black;
+    width: 50vw;
+    height: 50vh;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    overflow-y: auto;
+    z-index: 2;
+  }
+
+  .data_items {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .data_items_2 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
   }
 
   .search {

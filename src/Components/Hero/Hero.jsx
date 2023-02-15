@@ -10,12 +10,21 @@ import DummyHomes from "../Dummies/Dummyhomes";
 
 const Hero = () => {
   const [show, setShow] = useState(false);
+  const [showtype, setShowType] = useState(false);
   const [location, setLocation] = useState("None");
-  const [state, setState] = useState("");
+  const [type, setType] = useState("None");
 
   const DummyData = DummyHomes;
 
   const toggleShow = () => setShow(!show);
+  const toggleShowType = () => setShowType(!showtype);
+
+  const states = { type, location };
+
+  const submitSearchParams = (e) => {
+    e.preventDefault();
+    console.log(states);
+  };
 
   return (
     <div className={css.hero}>
@@ -43,52 +52,65 @@ const Hero = () => {
           </p>
 
           <div className={css.search_params}>
-            <div className={css.box1}>
-              <div className={css.icon_outline}>
-                <MdLocationOn color="#1FAB71" className={css.icon} />
+            <form action="">
+              <div className={css.box1}>
+                <div className={css.icon_outline}>
+                  <MdLocationOn color="#1FAB71" className={css.icon} />
+                </div>
+
+                <div onClick={toggleShow} className={css.categories}>
+                  <p>
+                    Location <CgChevronDown />
+                  </p>
+
+                  <p className={css.selected}>{location}</p>
+
+                  {show ? (
+                    <div className={css.data_loc}>
+                      {DummyData.map((data) => (
+                        <div
+                          onClick={() => setLocation(data.location.city)}
+                          className={css.data_items}
+                        >
+                          {data.location.city}
+                        </div>
+                      ))}
+                    </div>
+                  ) : null}
+                </div>
               </div>
 
-              <div onClick={toggleShow} className={css.categories}>
-                <p>
-                  Location <CgChevronDown />
-                </p>
+              <div className={css.box1}>
+                <div className={css.icon_outline}>
+                  <HiHome color="#1FAB71" className={css.icon} />
+                </div>
 
-                <p onClick={toggleShow} className={css.selected}>
-                  {location}
-                </p>
+                <div onClick={toggleShowType} className={css.categories}>
+                  <p>
+                    Type <CgChevronDown />
+                  </p>
 
-                {show ? (
-                  <div className={css.data_loc}>
-                    {DummyData.map((data) => (
-                      <div
-                        onClick={() => setLocation(data.location.city)}
-                        className={css.data_items}
-                      >
-                        {data.location.city}
-                      </div>
-                    ))}
-                  </div>
-                ) : null}
-              </div>
-            </div>
+                  <p className={css.selected}>{type}</p>
 
-            <div className={css.box1}>
-              <div className={css.icon_outline}>
-                <HiHome color="#1FAB71" className={css.icon} />
+                  {showtype ? (
+                    <div className={css.data_loc}>
+                      {DummyData.map((data) => (
+                        <div
+                          onClick={() => setType(data.category)}
+                          className={css.data_items_2}
+                        >
+                          {data.category}
+                        </div>
+                      ))}
+                    </div>
+                  ) : null}
+                </div>
               </div>
 
-              <div className={css.categories}>
-                <p>
-                  Type <CgChevronDown />
-                </p>
-
-                <p onClick={toggleShow} className={css.selected}>
-                  {location}
-                </p>
+              <div className={css.search} onClick={submitSearchParams}>
+                Search
               </div>
-            </div>
-
-            <div className={css.search}>Search</div>
+            </form>
           </div>
 
           <div className={css.desktop_rating}>
