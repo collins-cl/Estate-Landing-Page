@@ -263,20 +263,20 @@
     padding: 8px;
   }
 
-  .search_params .box1 .icon {
+  .search_params form .box1 .icon {
     font-size: 25px;
   }
 
-  .search_params .box1 .categories {
+  .search_params form .box1 .categories {
     margin-top: -15px;
     width: 100%;
   }
 
-  .search_params .box1 .selected {
+  .search_params form .box1 .selected {
     margin-top: 5px;
     color: rgb(37, 37, 37);
     font-weight: medium;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .data_loc {
@@ -298,14 +298,14 @@
   }
 
   .data_items {
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 1px;
     text-transform: uppercase;
     cursor: pointer;
   }
 
   .data_items_2 {
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 1px;
     text-transform: uppercase;
     cursor: pointer;
