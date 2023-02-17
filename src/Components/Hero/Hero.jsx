@@ -7,8 +7,10 @@ import { MdLocationOn } from "react-icons/md";
 import { CgChevronDown } from "react-icons/cg";
 import Ratings from "../Ratings/Ratings";
 import DummyHomes from "../Dummies/Dummyhomes";
+import Loading from "../Loading/Loading";
 
 const Hero = () => {
+  const [isLoading, setIsloading] = useState(false);
   const [show, setShow] = useState(false);
   const [showtype, setShowType] = useState(false);
   const [location, setLocation] = useState("None");
@@ -24,10 +26,15 @@ const Hero = () => {
   const submitSearchParams = (e) => {
     e.preventDefault();
     console.log(states);
+    setIsloading(true);
+    setTimeout(() => {
+      setIsloading(false);
+    }, 2500);
   };
 
   return (
     <div className={css.hero}>
+      {isLoading && <Loading />}
       <div className={css.blurry_background}></div>
 
       <div className={css.container}>

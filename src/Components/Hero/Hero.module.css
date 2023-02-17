@@ -319,6 +319,7 @@
     border-radius: 10px;
     font-size: 19px;
     cursor: pointer;
+    margin-left: 0;
   }
 
   .desktop_rating {
