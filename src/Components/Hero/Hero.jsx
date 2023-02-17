@@ -8,8 +8,10 @@ import { CgChevronDown } from "react-icons/cg";
 import Ratings from "../Ratings/Ratings";
 import DummyHomes from "../Dummies/Dummyhomes";
 import Loading from "../Loading/Loading";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   const [isLoading, setIsloading] = useState(false);
   const [show, setShow] = useState(false);
   const [showtype, setShowType] = useState(false);
@@ -23,12 +25,12 @@ const Hero = () => {
 
   const states = { type, location };
 
-  const submitSearchParams = (e) => {
-    e.preventDefault();
+  const submitSearchParams = (location, type) => {
     console.log(states);
     setIsloading(true);
     setTimeout(() => {
       setIsloading(false);
+      navigate(`/result/${location}/${type}`);
     }, 2500);
   };
 
@@ -114,7 +116,10 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className={css.search} onClick={submitSearchParams}>
+              <div
+                className={css.search}
+                onClick={() => submitSearchParams(location, type)}
+              >
                 Search
               </div>
             </form>

@@ -13,6 +13,14 @@ const DummyHomes = [
     image:
       "https://i.ibb.co/6FGV4xD/mariya-tereshkova-Q8t-Wy-R83-SLw-unsplash.jpg",
     category: "Industrial Home",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus, nihil maxime dolor deserunt temporibus et esse libero. Sed doloribus consequatur libero.",
+    reactions: [
+      "🏖️ Beach Vacation",
+      "🏞️ Nature",
+      "🦐 SeaFood",
+      "🪂 Creativity",
+    ],
   },
   {
     id: 2,
@@ -27,6 +35,14 @@ const DummyHomes = [
     price: Number("1200000").toLocaleString("en-Us"),
     image: "https://i.ibb.co/7GHnHVM/louis-maniquet-4-HNGWBj-A1k-unsplash.jpg",
     category: "Industrial Home",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus, nihil maxime dolor deserunt temporibus et esse libero. Sed doloribus consequatur libero.",
+    reactions: [
+      "🏖️ Beach Vacation",
+      "🏞️ Nature",
+      "🦐 SeaFood",
+      "🪂 Creativity",
+    ],
   },
   {
     id: 3,
@@ -41,6 +57,14 @@ const DummyHomes = [
     price: Number("1000000").toLocaleString("en-Us"),
     image: "https://i.ibb.co/vmZY6H0/kimson-doan-Nm-Vnsp13-JYc-unsplash.jpg",
     category: "Industrial Home",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus, nihil maxime dolor deserunt temporibus et esse libero. Sed doloribus consequatur libero.",
+    reactions: [
+      "🏖️ Beach Vacation",
+      "🏞️ Nature",
+      "🦐 SeaFood",
+      "🪂 Creativity",
+    ],
   },
   {
     id: 4,
@@ -54,6 +78,14 @@ const DummyHomes = [
     price: Number("6200000").toLocaleString("en-Us"),
     image: "https://i.ibb.co/LdtVzHp/dillon-kydd-3-Ignkeds3w8-unsplash.jpg",
     category: "Standard Home",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus, nihil maxime dolor deserunt temporibus et esse libero. Sed doloribus consequatur libero.",
+    reactions: [
+      "🏖️ Beach Vacation",
+      "🏞️ Nature",
+      "🦐 SeaFood",
+      "🪂 Creativity",
+    ],
   },
   {
     id: 5,
@@ -68,6 +100,14 @@ const DummyHomes = [
     image:
       "https://i.ibb.co/XJPvnk4/roger-starnes-sr-34r6y-B4y-URg-unsplash.jpg",
     category: "Family Home",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus, nihil maxime dolor deserunt temporibus et esse libero. Sed doloribus consequatur libero.",
+    reactions: [
+      "🏖️ Beach Vacation",
+      "🏞️ Nature",
+      "🦐 SeaFood",
+      "🪂 Creativity",
+    ],
   },
   {
     id: 6,
@@ -81,6 +121,14 @@ const DummyHomes = [
     price: Number("4200000").toLocaleString("en-Us"),
     image: "https://i.ibb.co/DrvgWyZ/dillon-kydd-2ke-CPb73a-QY-unsplash.jpg",
     category: "Farm Shed",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus, nihil maxime dolor deserunt temporibus et esse libero. Sed doloribus consequatur libero.",
+    reactions: [
+      "🏖️ Beach Vacation",
+      "🏞️ Nature",
+      "🦐 SeaFood",
+      "🪂 Creativity",
+    ],
   },
   {
     id: 7,
@@ -95,6 +143,14 @@ const DummyHomes = [
     image:
       "https://i.ibb.co/6Jtfk62/r-architecture-Jv-Q0-Q5-Ike-MM-unsplash.jpg",
     category: "Family Home",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus, nihil maxime dolor deserunt temporibus et esse libero. Sed doloribus consequatur libero.",
+    reactions: [
+      "🏖️ Beach Vacation",
+      "🏞️ Nature",
+      "🦐 SeaFood",
+      "🪂 Creativity",
+    ],
   },
   {
     id: 8,
@@ -108,6 +164,14 @@ const DummyHomes = [
     price: Number("1000000").toLocaleString("en-Us"),
     image: "https://i.ibb.co/TrcrXHF/blake-wheeler-z-BHU08hdzh-Y-unsplash.jpg",
     category: "Industrial Home",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus, nihil maxime dolor deserunt temporibus et esse libero. Sed doloribus consequatur libero.",
+    reactions: [
+      "🏖️ Beach Vacation",
+      "🏞️ Nature",
+      "🦐 SeaFood",
+      "🪂 Creativity",
+    ],
   },
   {
     id: 9,
@@ -122,6 +186,14 @@ const DummyHomes = [
     image:
       "https://i.ibb.co/4tCpdXt/r-architecture-MAn-Vo-Jl-QUvg-unsplash.jpg",
     category: "Industrial Home",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus, nihil maxime dolor deserunt temporibus et esse libero. Sed doloribus consequatur libero.",
+    reactions: [
+      "🏖️ Beach Vacation",
+      "🏞️ Nature",
+      "🦐 SeaFood",
+      "🪂 Creativity",
+    ],
   },
   {
     id: 10,
@@ -136,6 +208,14 @@ const DummyHomes = [
     image:
       "https://i.ibb.co/z51RhYB/r-architecture-2g-Dwl-Iim3-Uw-unsplash.jpg",
     category: "Industrial Home",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus, nihil maxime dolor deserunt temporibus et esse libero. Sed doloribus consequatur libero.",
+    reactions: [
+      "🏖️ Beach Vacation",
+      "🏞️ Nature",
+      "🦐 SeaFood",
+      "🪂 Creativity",
+    ],
   },
 ];
 

@@ -14,7 +14,7 @@
 .loading div {
   height: 100px;
   width: 100px;
-  border: 5px solid white;
+  border: 5px solid #1fab71;
   border-left: none;
   animation: rotate infinite 2s;
 }
