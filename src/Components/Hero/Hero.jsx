@@ -9,29 +9,36 @@ import Ratings from "../Ratings/Ratings";
 import DummyHomes from "../Dummies/Dummyhomes";
 import Loading from "../Loading/Loading";
 import { useNavigate } from "react-router-dom";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+import Button from "@mui/material/Button";
 
 const Hero = () => {
   const navigate = useNavigate();
   const [isLoading, setIsloading] = useState(false);
-  const [show, setShow] = useState(false);
-  const [showtype, setShowType] = useState(false);
   const [location, setLocation] = useState("None");
   const [type, setType] = useState("None");
 
   const DummyData = DummyHomes;
 
-  const toggleShow = () => setShow(!show);
-  const toggleShowType = () => setShowType(!showtype);
-
   const states = { type, location };
 
   const submitSearchParams = (location, type) => {
-    console.log(states);
-    setIsloading(true);
-    setTimeout(() => {
-      setIsloading(false);
-      navigate(`/result/${location}/${type}`);
-    }, 2500);
+    if (location === "None") {
+      alert(`Location is empty`);
+    } else {
+      if (type === "None") {
+        alert("Category is empty");
+      } else {
+        console.log(states);
+        setIsloading(true);
+        setTimeout(() => {
+          setIsloading(false);
+          navigate(`/result/${location}/${type}`);
+        }, 2500);
+      }
+    }
   };
 
   return (
@@ -67,25 +74,31 @@ const Hero = () => {
                   <MdLocationOn color="#1FAB71" className={css.icon} />
                 </div>
 
-                <div onClick={toggleShow} className={css.categories}>
+                <div className={css.categories}>
                   <p>
                     Location <CgChevronDown />
                   </p>
 
-                  <p className={css.selected}>{location}</p>
-
-                  {show ? (
-                    <div className={css.data_loc}>
+                  <FormControl sx={{ minWidth: "100%", mt: 1 }}>
+                    <Select
+                      value={location}
+                      autoWidth
+                      onChange={(e) => setLocation(e.target.value)}
+                      id={css.select}
+                      IconComponent={null}
+                    >
+                      <MenuItem value="None">None</MenuItem>
                       {DummyData.map((data) => (
-                        <div
-                          onClick={() => setLocation(data.location.city)}
-                          className={css.data_items}
+                        <MenuItem
+                          id={css.menuitem}
+                          key={data.id}
+                          value={data.location.city}
                         >
                           {data.location.city}
-                        </div>
+                        </MenuItem>
                       ))}
-                    </div>
-                  ) : null}
+                    </Select>
+                  </FormControl>
                 </div>
               </div>
 
@@ -94,25 +107,31 @@ const Hero = () => {
                   <HiHome color="#1FAB71" className={css.icon} />
                 </div>
 
-                <div onClick={toggleShowType} className={css.categories}>
+                <div className={css.categories}>
                   <p>
-                    Type <CgChevronDown />
+                    Category <CgChevronDown />
                   </p>
 
-                  <p className={css.selected}>{type}</p>
-
-                  {showtype ? (
-                    <div className={css.data_loc}>
+                  <FormControl sx={{ minWidth: "100%", mt: 1 }}>
+                    <Select
+                      value={type}
+                      autoWidth
+                      onChange={(e) => setType(e.target.value)}
+                      id={css.select}
+                      IconComponent={null}
+                    >
+                      <MenuItem value="None">None</MenuItem>
                       {DummyData.map((data) => (
-                        <div
-                          onClick={() => setType(data.category)}
-                          className={css.data_items_2}
+                        <MenuItem
+                          id={css.menuitem}
+                          key={data.id}
+                          value={data.category}
                         >
                           {data.category}
-                        </div>
+                        </MenuItem>
                       ))}
-                    </div>
-                  ) : null}
+                    </Select>
+                  </FormControl>
                 </div>
               </div>
 

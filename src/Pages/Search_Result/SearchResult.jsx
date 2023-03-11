@@ -11,17 +11,17 @@ const SearchResult = () => {
 
   const data = DummyHomes;
 
-  const filteredData = DummyHomes.filter((el) => {
-    if (el.category !== type) {
-      return;
-    } else {
-      return el.category;
+  const filteredData = data.filter((el) => {
+    if (el.category === type) {
+      if (el.location.city === location) {
+        return el;
+      }
     }
   });
 
   useEffect(() => {
     console.log(filteredData);
-  }, []);
+  }, [type]);
 
   return (
     <>
