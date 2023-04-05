@@ -131,6 +131,16 @@
   font-size: 15px;
 }
 
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback p {
+  text-transform: capitalize;
+}
+
 @media screen and (max-width: 600px) {
   .searchresult {
     width: 90%;

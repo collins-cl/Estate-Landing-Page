@@ -1,0 +1,32 @@
+.wrapper {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.wrapper img {
+  width: 300px;
+}
+
+.wrapper p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.wrapper p a{
+    color: rgb(5, 251, 169);
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .wrapper img {
+    width: 70vw;
+  }
+
+}

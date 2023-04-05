@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import css from "../Search_Result/SearchResult.module.css";
-import image from "../../assets/build1.jpg";
 import Footer from "../../Components/Footer/Footer";
 import DummyHomes from "../../Components/Dummies/Dummyhomes";
 import { useEffect } from "react";
@@ -12,7 +11,7 @@ const SearchResult = () => {
   const data = DummyHomes;
 
   const filteredData = data.filter((el) => {
-    if (el.category === type) {
+    if (type === el.category) {
       if (el.location.city === location) {
         return el;
       }
@@ -21,14 +20,14 @@ const SearchResult = () => {
 
   useEffect(() => {
     console.log(filteredData);
-  }, [type]);
+  }, [location]);
 
   return (
     <>
       <div className={css.searchresult}>
         <div className={css.resultbox}>
           <div className={css.heading}>
-            <div>12 Results</div>
+            <div>{filteredData.length} Results</div>
             <div className={css.sort}>
               <p>Sort by</p>
               <div>Best Match ⌟</div>
@@ -36,7 +35,7 @@ const SearchResult = () => {
           </div>
 
           <div className={css.container}>
-            {filteredData &&
+            {filteredData?.length ? (
               filteredData.map((item) => (
                 <div className={css.wrapper} key={item.id}>
                   <div className={css.image_box}>
@@ -62,7 +61,12 @@ const SearchResult = () => {
                     <div className={css.book_now}>Book now</div>
                   </div>
                 </div>
-              ))}
+              ))
+            ) : (
+              <div className={css.feedback}>
+                <p>No available home in this location</p>
+              </div>
+            )}
           </div>
         </div>
       </div>
