@@ -157,8 +157,9 @@
     gap: 1.7em;
     align-items: flex-start;
     flex-direction: column;
-    background-color: #808080;
+    background-color: #fff;
     border: none;
+    z-index: 999;
   }
 
   .container.active .link,
@@ -178,7 +179,7 @@
   .container.active .link2 a {
     font-size: 25px;
     font-weight: bold;
-    color: white !important;
+    color: black !important;
     position: relative;
   }
 
@@ -186,4 +187,6 @@
     display: block;
     font-size: 22px;
   }
+
+ 
 }
