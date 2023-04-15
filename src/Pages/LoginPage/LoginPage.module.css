@@ -1,0 +1,352 @@
+.wrapper {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 3em;
+  background-image: url(../../assets/loginimage.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  padding: 1.5em;
+  border-radius: 10px;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  color: black;
+  position: relative;
+}
+
+.wrapper p {
+  color: #000;
+}
+
+.form {
+  width: 35%;
+  border-radius: 10px;
+  backdrop-filter: blur(40px);
+  padding: 15px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.head p:nth-child(1) {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.head p:nth-child(1) span {
+  font-weight: 800;
+}
+
+.head p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.head p:nth-child(2) a {
+  color: black;
+  font-weight: 800;
+}
+
+.form .intro {
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.inputs {
+  width: 100%;
+  margin-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.inputs .email,
+.inputs .password {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputs .password {
+  margin-top: 1.5em;
+  position: relative;
+}
+
+.inputs .password a {
+  color: #1fab71;
+  font-size: 13px;
+  display: flex;
+  justify-content: end;
+  margin-top: 4px;
+}
+
+.view_password {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 1.8em;
+  margin-right: 1em;
+}
+
+.inputs input,
+.inputs button {
+  margin-top: 5px;
+  height: 40px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.inputs button {
+  margin-top: 2em;
+  background-color: #1fab71;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.inputs button:disabled {
+  opacity: 0.7;
+  background-color: rgb(128, 27, 223);
+}
+
+.inputs input::placeholder {
+  font-size: 14px;
+}
+
+input.input_error {
+  border: 1px solid red;
+}
+
+.inputs .error {
+  color: red;
+  font-size: 13px;
+}
+
+.break_line {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-size: 14px;
+}
+
+.break_line > div {
+  width: 45%;
+  background-color: #ffff;
+  height: 1px;
+}
+
+.google_fb {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.google_fb > div {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(30px);
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.86);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.google_fb div:nth-child(1) {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 3em;
+    background-image: url(../../assets/loginimage.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: .8em;
+    border-radius: 10px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form {
+    width: 100%;
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+    padding: 15px;
+  }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .head p:nth-child(1) {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .head p:nth-child(1) span {
+    font-weight: 800;
+  }
+
+  .head p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .head p:nth-child(2) a {
+    color: black;
+    font-weight: 800;
+  }
+
+  .form .intro {
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+
+  .inputs {
+    width: 100%;
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputs label {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .inputs .email,
+  .inputs .password {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .inputs .password {
+    margin-top: 1.5em;
+    position: relative;
+  }
+
+  .inputs .password a {
+    color: #1fab71;
+    font-size: 13px;
+    display: flex;
+    justify-content: end;
+    margin-top: 4px;
+  }
+
+  .view_password {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1.8em;
+    margin-right: 1em;
+  }
+
+  .inputs input,
+  .inputs button {
+    margin-top: 5px;
+    height: 40px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+  }
+
+  .inputs button {
+    margin-top: 2em;
+    background-color: #1fab71;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .inputs button:disabled {
+    opacity: 0.7;
+    background-color: rgb(128, 27, 223);
+  }
+
+  .inputs input::placeholder {
+    font-size: 14px;
+  }
+
+  input.input_error {
+    border: 1px solid red;
+  }
+
+  .inputs .error {
+    color: red;
+    font-size: 13px;
+  }
+
+  .break_line {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 14px;
+  }
+
+  .break_line > div {
+    width: 45%;
+    background-color: #ffff;
+    height: 1px;
+  }
+
+  .google_fb {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .google_fb > div {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.86);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .google_fb div:nth-child(1) {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+}

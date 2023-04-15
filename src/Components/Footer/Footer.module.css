@@ -64,7 +64,7 @@
   width: 85%;
 }
 
-input {
+.f_box2 input {
   padding: 10px 0 5px 0;
   background: transparent;
   border: none;
@@ -75,17 +75,17 @@ input {
   border-bottom: 2px solid #2d2d2f;
 }
 
-input::placeholder {
+.f_box2 input::placeholder {
   font-size: 12px;
   letter-spacing: 1px;
 }
-.button {
+.f_box2 .button {
   width: 100%;
   display: flex;
   justify-content: end;
 }
 
-button {
+.f_box2 button {
   margin-top: 10px;
   width: 30%;
   padding: 9px 7px;
