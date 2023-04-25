@@ -1,7 +1,7 @@
 import css from "../LoginPage/LoginPage.module.css";
 import Footer from "../../Components/Footer/Footer";
 import { useFormik } from "formik";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Facebook from "../../assets/facebook.png";
 import Google from "../../assets/google.png";
 import { LoginSchema } from "../../Components/Schema";
@@ -11,13 +11,17 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 const LoginPage = () => {
   const [visible, setVisible] = useState(false);
 
+  const navigate = useNavigate();
+
   const onSubmit = async (values, actions) => {
     console.log(values);
     await new Promise((resolve) => {
       setTimeout(resolve, 2000);
+    }).then(() => {
+      localStorage.setItem("LoggedIn", true);
     });
-    alert(JSON.stringify(values));
     actions.resetForm();
+    navigate(-1);
   };
 
   const {
@@ -76,24 +80,28 @@ const LoginPage = () => {
 
             <div className={css.password}>
               <label htmlFor="password">Enter your Password</label>
-              <input
-                type={visible ? "text" : "password"}
-                name="password"
-                placeholder="password"
-                value={values.password}
-                onBlur={handleBlur}
-                onChange={handleChange}
-                className={
-                  errors.password && touched.email ? css.input_error : null
-                }
-              />
 
-              <div
-                onClick={() => setVisible(!visible)}
-                className={css.view_password}
-              >
-                {visible ? <FaEye /> : <FaEyeSlash />}
+              <div className={css.password_input}>
+                <input
+                  type={visible ? "text" : "password"}
+                  name="password"
+                  placeholder="password"
+                  value={values.password}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
+                  className={
+                    errors.password && touched.email ? css.input_error : null
+                  }
+                />
+
+                <div
+                  onClick={() => setVisible(!visible)}
+                  className={css.view_password}
+                >
+                  {visible ? <FaEye /> : <FaEyeSlash />}
+                </div>
               </div>
+
               {errors.password && touched.password && (
                 <p className={css.error}>{errors.password}</p>
               )}

@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import css from "../Search_Result/SearchResult.module.css";
 import Footer from "../../Components/Footer/Footer";
 import DummyHomes from "../../Components/Dummies/Dummyhomes";
@@ -58,7 +58,17 @@ const SearchResult = () => {
                       </div>
                     </div>
 
-                    <div className={css.book_now}>Book now</div>
+                    {localStorage.getItem("LoggedIn") ? (
+                      <div className={css.book_now}>Book now</div>
+                    ) : (
+                      <div className={css.login_redirectory}>
+                        You need to be logged in to book
+                        <Link to="/login" className={css.login_link}>
+                          {" "}
+                          LogIn here
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))

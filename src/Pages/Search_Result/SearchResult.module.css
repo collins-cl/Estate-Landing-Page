@@ -131,6 +131,25 @@
   font-size: 15px;
 }
 
+.login_redirectory {
+  width: 85%;
+  opacity: 0.7;
+  background-color: rgb(131, 125, 137);
+  color: white;
+  text-align: center;
+  padding: 7px 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.login_link {
+  font-size: 14px;
+  color: blue;
+}
+
 .feedback {
   display: flex;
   justify-content: center;
@@ -241,5 +260,10 @@
     font-size: 15px;
     margin-top: 1em;
     padding: 12px 0;
+  }
+
+  .login_redirectory {
+    width: 100%;
+    margin-top: 1em;
   }
 }
